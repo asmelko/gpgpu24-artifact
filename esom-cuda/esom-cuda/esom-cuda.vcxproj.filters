@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="kernels">
+      <UniqueIdentifier>{3638b99c-8e62-476c-84ca-934e95a05bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{10155912-7ce7-48e5-ac9f-6a300d6548b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\points.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\esom-cuda.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\esom-serial.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\interface.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\topk-serial.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\structs.cuh">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\topk.cuh">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\topk-cuda.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\projection-serial.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\projection-cuda.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\projection.cuh">
+      <Filter>kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="kernels\bitonic.cuh">
+      <Filter>kernels</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernels\topk.cu">
+      <Filter>kernels</Filter>
+    </CudaCompile>
+    <CudaCompile Include="kernels\projection.cu">
+      <Filter>kernels</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="esom-cuda-main.cpp" />
+  </ItemGroup>
+</Project>
